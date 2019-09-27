@@ -1,24 +1,21 @@
+/*
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: kakachake
+ * @Date: 2019-09-27 22:45:48
+ * @LastEditors: kakachake
+ * @LastEditTime: 2019-09-27 23:28:17
+ */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {GlobalStyle} from './style.js';
+import Header from './common/header/index'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="kaka">
+      <GlobalStyle/>
+      <Header/>
+      Hello world
     </div>
   );
 }
