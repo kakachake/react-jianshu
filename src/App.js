@@ -4,7 +4,7 @@
  * @Autor: kakachake
  * @Date: 2019-09-27 22:45:48
  * @LastEditors: kakachake
- * @LastEditTime: 2019-09-27 23:28:17
+ * @LastEditTime: 2019-09-28 00:14:33
  */
 import React from 'react';
 import {GlobalStyle} from './style.js';
