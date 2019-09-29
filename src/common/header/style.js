@@ -4,11 +4,11 @@
  * @Autor: kakachake
  * @Date: 2019-09-27 23:29:10
  * @LastEditors: kakachake
- * @LastEditTime: 2019-09-28 09:25:05
+ * @LastEditTime: 2019-09-29 08:51:16
  */
 import styled from 'styled-components'
 import logoPic from '../../statics/logo.png'
-console.log(logoPic)
+
 export const HeaderWrapper = styled.div`    
     position: relative;
     height: 56px;
@@ -49,20 +49,42 @@ export const NavItem = styled.div.attrs()`
         color: #ea6f5a;
     }
 `
+export const SearchWrapper = styled.div.attrs({
+})`
+    position: relative;
+    width: 160px;
+    height: 56px;
+    margin-left: 20px;
+    display: inline-block;
+    .iconfont {
+        position: absolute;
+        right:5px;
+        top: 50%;
+        font-size: 18px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background: #969696;
+        line-height: 30px;
+        width: 30px;
+        text-align: center;
+        border-radius: 15px;
+        color:#fff;
+    }
+`
 export const NavSearch = styled.input.attrs({
     placeholder: "搜索"
 })`
-    width: 160px;
+    width: 100%;
     height: 38px;
     box-sizing: border-box;
-    padding:0 20px;
+    padding:0 35px 0 20px;
     outline: none;
-    margin-top: 9px;
-    margin-left: 20px;
     border-radius: 19px;
     border: none;
+    margin: 9px 0;
     background: #eee;
     font-size: 14px;
+    color: #777;
     &::placeholder{
         color: #999;
     }

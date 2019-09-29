@@ -4,11 +4,10 @@
  * @Autor: kakachake
  * @Date: 2019-09-27 22:45:48
  * @LastEditors: kakachake
- * @LastEditTime: 2019-09-27 23:13:33
+ * @LastEditTime: 2019-09-28 22:44:33
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {GlobalStyle} from './style.js';
 import App from './App';
 
 

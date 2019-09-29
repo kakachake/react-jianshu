@@ -4,7 +4,7 @@
  * @Autor: kakachake
  * @Date: 2019-09-27 23:24:01
  * @LastEditors: kakachake
- * @LastEditTime: 2019-09-28 09:24:28
+ * @LastEditTime: 2019-09-28 22:48:15
  */
 import React, { Component } from 'react';
 import {
@@ -14,7 +14,8 @@ import {
     NavItem,
     NavSearch,
     Addition,
-    Button
+    Button,
+    SearchWrapper
 } from './style'
 
 class Header extends Component {
@@ -23,15 +24,18 @@ class Header extends Component {
             <HeaderWrapper>
                 <Logo href="/"/>
                 <Addition>
-                    <Button className="writing">写文章</Button>
+                    <Button className="writing"><span className="iconfont">&#xe768;</span>写文章</Button>
                     <Button className="reg">注册</Button>
                 </Addition>
                 <Nav>
                     <NavItem className = "left active">首页</NavItem>
                     <NavItem className = "left">下载App</NavItem>
                     <NavItem className = "right">登陆</NavItem>
-                    <NavItem className = "right">Aa</NavItem>
-                    <NavSearch></NavSearch>
+                    <NavItem className = "right"><span className="iconfont">&#xe636;</span></NavItem>
+                    <SearchWrapper>
+                        <NavSearch></NavSearch>
+                        <span className="iconfont">&#xe637;</span>
+                    </SearchWrapper>
                 </Nav>
             </HeaderWrapper>
         )
