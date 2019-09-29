@@ -4,7 +4,7 @@
  * @Autor: kakachake
  * @Date: 2019-09-27 23:29:10
  * @LastEditors: kakachake
- * @LastEditTime: 2019-09-29 08:51:16
+ * @LastEditTime: 2019-09-29 12:14:10
  */
 import styled from 'styled-components'
 import logoPic from '../../statics/logo.png'
@@ -56,6 +56,19 @@ export const SearchWrapper = styled.div.attrs({
     height: 56px;
     margin-left: 20px;
     display: inline-block;
+    &.slide-enter,&.slide-exit-active,&.slide-exit-done{
+        transition: all .2s ease-out;
+    }
+    &.slide-enter-active,&.slide-enter-done, &.slide-exit{
+        width: 240px;
+    }
+    // &.focused {
+    //     width: 200px;
+    //     .iconfont{
+    //         color:#fff;
+    //         background: #969696;
+    //     }
+    // }
     .iconfont {
         position: absolute;
         right:5px;
@@ -63,12 +76,16 @@ export const SearchWrapper = styled.div.attrs({
         font-size: 18px;
         transform: translateY(-50%);
         cursor: pointer;
-        background: #969696;
+        color:#969696;
         line-height: 30px;
         width: 30px;
         text-align: center;
         border-radius: 15px;
-        color:#fff;
+        transition: all .5s;
+        &.focused {
+            color:#fff;
+            background: #969696;
+        }
     }
 `
 export const NavSearch = styled.input.attrs({
